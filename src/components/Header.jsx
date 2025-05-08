@@ -14,15 +14,20 @@ export default function Header({ onViewChange }) {
         >
           Dashboard
         </button>
-        <button className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer'>Tickets</button>
-        <button className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer'>To-Do's</button>
+        <button 
+          onClick={() => onViewChange('tickets')}
+          className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button tickets-button'
+        >
+          Tickets
+        </button>
+        <button className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button to-dos-button'>To-Do's</button>
         <button 
           onClick={() => onViewChange('staff-directory')}
           className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button staff-directory-button'
         >
           Staff Directory
         </button>
-        <button className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer'>IT Request</button>
+        <button className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button it-request-button'>IT Request</button>
       </div>
     </div>
   )

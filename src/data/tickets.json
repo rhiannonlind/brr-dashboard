@@ -1,0 +1,206 @@
+{
+  "headers": [
+    {
+      "title": "Ticket Type",
+      "width": "200px",
+      "field": "type"
+    },
+    {
+      "title": "Status",
+      "width": "150px",
+      "field": "status"
+    },
+    {
+      "title": "Date Submitted",
+      "width": "200px",
+      "field": "dateSubmitted"
+    },
+    {
+      "title": "Description",
+      "width": "400px",
+      "field": "description"
+    }
+  ],
+  "rows": [
+    {
+      "type": "Technical Support",
+      "status": "Open",
+      "dateSubmitted": "2024-03-15",
+      "description": "Unable to access company VPN after system update"
+    },
+    {
+      "type": "Hardware Issue",
+      "status": "In Progress",
+      "dateSubmitted": "2024-03-14",
+      "description": "Laptop screen flickering intermittently"
+    },
+    {
+      "type": "Software Bug",
+      "status": "Resolved",
+      "dateSubmitted": "2024-03-13",
+      "description": "Application crashes when exporting large datasets"
+    },
+    {
+      "type": "Access Request",
+      "status": "Pending",
+      "dateSubmitted": "2024-03-12",
+      "description": "Need access to project management software"
+    },
+    {
+      "type": "Password Reset",
+      "status": "Resolved",
+      "dateSubmitted": "2024-03-11",
+      "description": "Forgot password for email account"
+    },
+    {
+      "type": "Network Issue",
+      "status": "Open",
+      "dateSubmitted": "2024-03-10",
+      "description": "Slow internet connection in office"
+    },
+    {
+      "type": "Software Installation",
+      "status": "In Progress",
+      "dateSubmitted": "2024-03-09",
+      "description": "Need Adobe Creative Suite installed"
+    },
+    {
+      "type": "Email Issue",
+      "status": "Resolved",
+      "dateSubmitted": "2024-03-08",
+      "description": "Not receiving emails from specific domain"
+    },
+    {
+      "type": "Hardware Request",
+      "status": "Pending",
+      "dateSubmitted": "2024-03-07",
+      "description": "Request for additional monitor"
+    },
+    {
+      "type": "Software Bug",
+      "status": "Open",
+      "dateSubmitted": "2024-03-06",
+      "description": "Calendar sync issues with mobile device"
+    },
+    {
+      "type": "Technical Support",
+      "status": "Resolved",
+      "dateSubmitted": "2024-03-05",
+      "description": "Printer not connecting to network"
+    },
+    {
+      "type": "Access Request",
+      "status": "In Progress",
+      "dateSubmitted": "2024-03-04",
+      "description": "Need access to shared drive"
+    },
+    {
+      "type": "Hardware Issue",
+      "status": "Open",
+      "dateSubmitted": "2024-03-03",
+      "description": "Keyboard keys not responding"
+    },
+    {
+      "type": "Software Bug",
+      "status": "Pending",
+      "dateSubmitted": "2024-03-02",
+      "description": "Application freezes when uploading files"
+    },
+    {
+      "type": "Network Issue",
+      "status": "Resolved",
+      "dateSubmitted": "2024-03-01",
+      "description": "WiFi connection dropping frequently"
+    },
+    {
+      "type": "Technical Support",
+      "status": "In Progress",
+      "dateSubmitted": "2024-02-29",
+      "description": "Need help setting up video conferencing"
+    },
+    {
+      "type": "Email Issue",
+      "status": "Open",
+      "dateSubmitted": "2024-02-28",
+      "description": "Email signature not displaying correctly"
+    },
+    {
+      "type": "Hardware Request",
+      "status": "Resolved",
+      "dateSubmitted": "2024-02-27",
+      "description": "Request for ergonomic mouse"
+    },
+    {
+      "type": "Software Installation",
+      "status": "Pending",
+      "dateSubmitted": "2024-02-26",
+      "description": "Need Microsoft Office installed"
+    },
+    {
+      "type": "Network Issue",
+      "status": "In Progress",
+      "dateSubmitted": "2024-02-25",
+      "description": "VPN connection issues"
+    },
+    {
+      "type": "Technical Support",
+      "status": "Open",
+      "dateSubmitted": "2024-02-24",
+      "description": "Need help with dual monitor setup"
+    },
+    {
+      "type": "Software Bug",
+      "status": "Resolved",
+      "dateSubmitted": "2024-02-23",
+      "description": "Application not saving settings"
+    },
+    {
+      "type": "Access Request",
+      "status": "Pending",
+      "dateSubmitted": "2024-02-22",
+      "description": "Need access to development environment"
+    },
+    {
+      "type": "Hardware Issue",
+      "status": "In Progress",
+      "dateSubmitted": "2024-02-21",
+      "description": "Laptop battery not charging"
+    },
+    {
+      "type": "Email Issue",
+      "status": "Open",
+      "dateSubmitted": "2024-02-20",
+      "description": "Email rules not working"
+    },
+    {
+      "type": "Software Bug",
+      "status": "Resolved",
+      "dateSubmitted": "2024-02-19",
+      "description": "Application crashes on startup"
+    },
+    {
+      "type": "Network Issue",
+      "status": "Pending",
+      "dateSubmitted": "2024-02-18",
+      "description": "Slow file transfer speeds"
+    },
+    {
+      "type": "Technical Support",
+      "status": "In Progress",
+      "dateSubmitted": "2024-02-17",
+      "description": "Need help with backup software"
+    },
+    {
+      "type": "Hardware Request",
+      "status": "Open",
+      "dateSubmitted": "2024-02-16",
+      "description": "Request for docking station"
+    },
+    {
+      "type": "Software Installation",
+      "status": "Resolved",
+      "dateSubmitted": "2024-02-15",
+      "description": "Need design software installed"
+    }
+  ]
+} 
