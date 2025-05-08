@@ -1,6 +1,6 @@
-import './App.css'
-import Header from './Header'
-import StaffDirectory from './StaffDirectory'
+import './styles/App.css'
+import Header from './components/Header'
+import StaffDirectory from './pages/StaffDirectory'
 import { useState } from 'react'
 
 function App() {

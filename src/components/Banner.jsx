@@ -1,5 +1,5 @@
 import React from 'react'
-import bannerImage from './assets/spring-slider.jpg'
+import bannerImage from '../assets/spring-slider.jpg'
 export default function Banner() {
   return (
     <div className='w-[100%] h-[200px] p-0'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import puppyImage from './assets/puppy.jpeg'
+import puppyImage from '../assets/puppy.jpeg'
 
 export default function Header({ onViewChange }) {
   return (
