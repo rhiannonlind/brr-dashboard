@@ -1,5 +1,6 @@
 import './styles/App.css'
 import Header from './components/Header'
+import DashboardPage from './pages/HomeDashboard/DashboardPage'
 import StaffDirectory from './pages/StaffDirectory'
 import Tickets from './pages/Tickets'
 import ITRequest from './pages/ITRequest'
@@ -18,7 +19,7 @@ function App() {
       <Header onViewChange={handleViewChange} />
       {activeView === 'main' ? (
         <div className='w-[80%] ml-[20%]'>
-          <p className='font-bold text-4xl'>Hello</p>
+          <DashboardPage />
         </div>
       ) : activeView === 'tickets' ? (
         <div className='w-[80%] ml-[20%]'>

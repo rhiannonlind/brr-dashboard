@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Checklist() {
-  const [tasks, setTasks] = useState([]);
+export default function Checklist({ tasks, setTasks }) {
   const [newTask, setNewTask] = useState('');
   const [editingTask, setEditingTask] = useState(null);
   const [editText, setEditText] = useState('');
