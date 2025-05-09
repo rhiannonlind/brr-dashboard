@@ -27,7 +27,9 @@ export default function Header({ onViewChange }) {
         >
           Staff Directory
         </button>
-        <button className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button it-request-button'>IT Request</button>
+        <button 
+        onClick={() => onViewChange('it-request')}
+        className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button it-request-button'>IT Request</button>
       </div>
     </div>
   )
