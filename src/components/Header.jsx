@@ -6,7 +6,12 @@ export default function Header({ onViewChange }) {
   return (
     <div className='header-container'>
       <div className='logo-container'>
-        <img src={logoImage} alt='R logo' />
+        <button 
+          onClick={() => onViewChange('main')}
+          className='cursor-pointer'
+        >
+          <img src={logoImage} alt='R logo' />
+        </button>
       </div>
       <div className='nav-buttons'>
         <button 

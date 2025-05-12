@@ -48,7 +48,7 @@ export default function ITRequest() {
         imageAlt="IT Support banner"
       />
       <div className='flex flex-col items-center justify-center mt-10 p-2'>
-        <h5 className='text-brand-secondary mb-0'>Please fill out the form below to submit a request to the IT department</h5>
+        <h5 className='text-brand-secondary mb-0 italic'>Please fill out the form below to submit a request to the IT department</h5>
       </div>
       <div className='it-request-container flex justify-center items-center'>
         <form onSubmit={handleSubmit} className='it-request-form'>

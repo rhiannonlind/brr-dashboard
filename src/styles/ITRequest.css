@@ -1,7 +1,8 @@
 .it-request-container {
   background-color: #F0F2FA;
   width: 60%;
-  margin: 3rem auto;
+  margin: 0 auto;
+  margin-bottom: 3rem;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

@@ -7,7 +7,7 @@ export default function Banner({
   imageAlt = "Dashboard banner"
 }) {
   return (
-    <div className='w-full h-[200px] overflow-hidden flex items-center justify-between px-8'>
+    <div className='w-full h-[170px] overflow-hidden flex items-center justify-between px-8 shadow-sm'>
       <h1 className='text-4xl font-bold text-[#FF6B6B]'>{title}</h1>
       <img 
         src={image} 
