@@ -44,7 +44,7 @@ export default function Database({ data }) {
           {filteredRows.map((row, index) => (
             <div key={index} className="w-full h-auto bg-white grid m-0 border-b border-[#E2E8F0] last:border-b-0 last:rounded-b-lg" style={{ gridTemplateColumns: gridColumns }}>
               {data.headers.map((header, headerIndex) => (
-                <div key={headerIndex} className='w-[100%] h-[100%] px-0.75 py-2 bg-white border-r border-[#E2E8F0] last:border-r-0'>
+                <div key={headerIndex} className='w-[100%] h-[100%] px-2 py-2 bg-white border-r border-[#E2E8F0] last:border-r-0'>
                   {row[header.field]}
                 </div>
               ))}

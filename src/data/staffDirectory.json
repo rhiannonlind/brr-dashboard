@@ -32,7 +32,7 @@
     },
     {
       "title": "Drive Storage Used",
-      "width": "200px",
+      "width": "220px",
       "field": "driveStorage"
     }
   ],
