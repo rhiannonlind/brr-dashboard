@@ -3,15 +3,14 @@ import React, { useState, useEffect } from 'react';
 export default function Carousel({ items, cardsPerView = 4, renderItem }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentCardsPerView, setCurrentCardsPerView] = useState(cardsPerView);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 950);
   const totalCards = items.length;
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setCurrentCardsPerView(1);
-      } else {
-        setCurrentCardsPerView(cardsPerView);
-      }
+      const mobile = window.innerWidth <= 950;
+      setIsMobile(mobile);
+      setCurrentCardsPerView(mobile ? 1 : cardsPerView);
     };
 
     handleResize(); // Initial check
@@ -45,7 +44,7 @@ export default function Carousel({ items, cardsPerView = 4, renderItem }) {
           {items.map((item, index) => (
             <div 
               key={index} 
-              className={`flex-none p-4 ${window.innerWidth <= 768 ? 'w-full' : 'w-1/4'}`}
+              className={`flex-none p-4 ${isMobile ? 'w-full' : 'w-1/4'}`}
             >
               {renderItem(item, index)}
             </div>

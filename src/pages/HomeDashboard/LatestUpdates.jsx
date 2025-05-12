@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Card from '../../components/Card'
 import updatesData from '../../data/updates.json'
 import '../../styles/HomeDashboard.css'
 

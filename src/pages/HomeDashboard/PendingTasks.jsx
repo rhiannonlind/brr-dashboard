@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import toDoBannerImage from '../../assets/ToDo-Banner.svg'
 import '../../styles/HomeDashboard.css'
 
-export default function PendingTasks({ onViewChange }) {
+export default function PendingTasks() {
+  const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
@@ -57,7 +59,7 @@ export default function PendingTasks({ onViewChange }) {
           <p className="text-lg text-center text-gray-600">
             You currently have no To-Do's, head to{' '}
             <button 
-              onClick={() => onViewChange('to-dos')}
+              onClick={() => navigate('/to-dos')}
               className="text-[#FF6B6B] hover:text-[#FF5252] underline bg-transparent border-none cursor-pointer"
             >
               To-Do's
