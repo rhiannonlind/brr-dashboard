@@ -19,23 +19,23 @@ function App() {
     <div className='flex'>
       <Header onViewChange={handleViewChange} />
       {activeView === 'main' ? (
-        <div className='w-[80%] ml-[20%]'>
+        <div className='w-[80%] ml-[20%] page-container'>
           <DashboardPage />
         </div>
       ) : activeView === 'tickets' ? (
-        <div className='w-[80%] ml-[20%]'>
+        <div className='w-[80%] ml-[20%] page-container'>
           <Tickets onViewChange={handleViewChange} />
         </div>
       ) : activeView === 'to-dos' ? (
-        <div className='w-[80%] ml-[20%]'>
+        <div className='w-[80%] ml-[20%] page-container'>
           <ToDos onViewChange={handleViewChange} />
         </div>       
       ) : activeView === 'staff-directory' ? (
-        <div className='w-[80%] ml-[20%]'>
+        <div className='w-[80%] ml-[20%] page-container'>
           <StaffDirectory onViewChange={handleViewChange} />
         </div>   
       )  : activeView === 'it-request' ? (
-        <div className='w-[80%] ml-[20%]'>
+        <div className='w-[80%] ml-[20%] page-container '>
           <ITRequest onViewChange={handleViewChange} />
         </div>
       ) : null}

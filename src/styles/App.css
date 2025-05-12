@@ -43,3 +43,11 @@ Body: 16px / 1rem (Standard text)
 Small: 14px / 0.875rem (Secondary information, captions)
 Micro: 12px / 0.75rem (Legal text, footnotes)
  */
+
+ @media screen and (max-width: 768px) {
+    .page-container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20%;
+    }
+ }
