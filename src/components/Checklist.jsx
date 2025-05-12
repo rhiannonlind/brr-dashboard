@@ -28,9 +28,7 @@ export default function Checklist({ tasks, setTasks }) {
 
   const handleComplete = (index) => {
     const newTasks = [...tasks];
-    const completedTask = newTasks.splice(index, 1)[0];
-    completedTask.completed = true;
-    newTasks.push(completedTask);
+    newTasks[index] = { ...newTasks[index], completed: !newTasks[index].completed };
     setTasks(newTasks);
   };
 
@@ -104,7 +102,7 @@ export default function Checklist({ tasks, setTasks }) {
                   <div className='flex gap-2 shrink-0'>
                     <button
                       onClick={() => handleComplete(index)}
-                      className='w-6 h-6 border border-[#4A4E69] rounded flex items-center justify-center hover:bg-[#F0F2FA] text-[#06D6A0] hover:cursor-pointer'
+                      className={`w-6 h-6 border border-[#4A4E69] rounded flex items-center justify-center hover:bg-[#F0F2FA] ${task.completed ? 'text-[#06D6A0]' : 'text-[#4A4E69]'} hover:cursor-pointer`}
                     >
                       {task.completed && '✓'}
                     </button>

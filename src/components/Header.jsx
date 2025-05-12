@@ -73,7 +73,7 @@ export default function Header({ onViewChange }) {
           }}
           className='nav-button'
         >
-          IT Request
+          IT Support Request
         </button>
       </div>
     </div>

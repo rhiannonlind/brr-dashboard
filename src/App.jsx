@@ -22,7 +22,7 @@ function App() {
         <Header onViewChange={handleViewChange} />
         {activeView === 'main' ? (
           <div className='w-[80%] ml-[20%] page-container'>
-            <DashboardPage />
+            <DashboardPage onViewChange={handleViewChange} />
           </div>
         ) : activeView === 'tickets' ? (
           <div className='w-[80%] ml-[20%] page-container'>

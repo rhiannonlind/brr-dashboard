@@ -5,7 +5,7 @@ import PendingTasks from './PendingTasks'
 import LatestUpdates from './LatestUpdates'
 import '../../styles/HomeDashboard.css'
 
-export default function DashboardPage() {
+export default function DashboardPage({ onViewChange }) {
   return (
     <div className=''>
       <div>
@@ -13,11 +13,11 @@ export default function DashboardPage() {
       </div>
       <div className='flex flex-col gap-4 p-4'>
         <div className='w-full bg-brand border border-brand card-shadow card-rounded'>
-          <OpenTickets />
+          <OpenTickets onViewChange={onViewChange} />
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           <div className='bg-brand border border-brand card-shadow card-rounded'>
-            <PendingTasks />
+            <PendingTasks onViewChange={onViewChange}/>
           </div>
           <div className='bg-brand border border-brand card-shadow card-rounded'>
             <LatestUpdates />
