@@ -23,12 +23,14 @@
   ],
   "rows": [
     {
+      "userId": "john.doe",
       "type": "Technical Support",
       "status": "Open",
       "dateSubmitted": "2024-03-15",
       "description": "Unable to access company VPN after system update"
     },
     {
+      "userId": "jane.smith",
       "type": "Hardware Issue",
       "status": "In Progress",
       "dateSubmitted": "2024-03-14",
