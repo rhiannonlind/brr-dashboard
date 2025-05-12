@@ -49,15 +49,6 @@
   border-color: #F0F2FA;
 }
 
-/* Card Styles */
-.card-shadow {
-  box-shadow: 0 2px 4px rgba(26, 30, 60, 0.05);
-}
-
-.card-rounded {
-  border-radius: 0.5rem;
-}
-
 /* Ticket and Task Styles */
 .ticket-item, .task-item {
   padding: 0.75rem;
@@ -71,23 +62,6 @@
   border-bottom: none;
 }
 
-.status-badge {
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-/* Status Colors */
-.status-open {
-  background-color: #06D6A0;
-  color: #FFFFFF;
-}
-
-.status-pending {
-  background-color: #FF6B6B;
-  color: #FFFFFF;
-}
 
 /* Update Item Styles */
 .update-item {
@@ -109,15 +83,7 @@
   margin-top: 0.25rem;
 }
 
-/* Text Colors */
-.text-muted {
-  color: #4A4E69;
-}
 
-.text-completed {
-  color: #4A4E69;
-  text-decoration: line-through;
-}
 
 /* Dashboard Specific */
 .dashboard-header {
@@ -137,19 +103,6 @@
 .dashboard-subtitle {
   color: #4A4E69;
   font-size: 1.125rem;
-}
-
-/* Accent Elements */
-.accent-purple {
-  color: #7209B7;
-}
-
-.accent-coral {
-  color: #FF6B6B;
-}
-
-.accent-azure {
-  color: #4CC9F0;
 }
 
 /* Custom Scrollbar Styles */
@@ -201,21 +154,6 @@
   .dashboard-header {
     padding: 1.5rem;
     margin-bottom: 1rem;
-  }
-
-  /* Carousel adjustments for mobile */
-  .carousel-container {
-    padding: 0 1rem;
-  }
-
-  .carousel-item {
-    width: 100% !important;
-    padding: 0.5rem;
-  }
-
-  /* Card adjustments for mobile */
-  .card {
-    margin: 0.5rem 0;
   }
 
   /* Text size adjustments */
