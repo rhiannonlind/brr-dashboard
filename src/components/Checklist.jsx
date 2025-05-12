@@ -8,7 +8,8 @@ export default function Checklist({ tasks, setTasks }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newTask.trim() !== '') {
-      setTasks([{ text: newTask, completed: false }, ...tasks]);
+      const capitalizedText = newTask.charAt(0).toUpperCase() + newTask.slice(1);
+      setTasks([{ text: capitalizedText, completed: false }, ...tasks]);
       setNewTask('');
     }
   };
@@ -78,7 +79,7 @@ export default function Checklist({ tasks, setTasks }) {
                     type="text"
                     value={editText}
                     onChange={(e) => setEditText(e.target.value)}
-                    className='p-1 border border-[#F0F2FA] rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-[#4CC9F0] text-[#1A1E3C]'
+                    className='p-1 border border-[#F0F2FA] rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-[#4CC9F0] text-[#1A1E3C] uppercase'
                   />
                   <button 
                     type="submit"
