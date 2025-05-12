@@ -1,40 +1,44 @@
 import React from 'react'
-import puppyImage from '../assets/puppy.jpeg'
+import logoImage from '../assets/logo.svg'
+import '../styles/header.css'
 
 export default function Header({ onViewChange }) {
   return (
-    <div className='fixed top-0 left-0 flex flex-col w-[20%] h-screen bg-gray-400'>
-      <div className='w-[100%]'>
-        <img src={puppyImage} alt='puppy' />
+    <div className='header-container'>
+      <div className='logo-container'>
+        <img src={logoImage} alt='R logo' />
       </div>
-      <div className='w-[100%] pt-3.5 flex flex-col gap-2'>
+      <div className='nav-buttons'>
         <button 
           onClick={() => onViewChange('main')}
-          className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer'
+          className='nav-button'
         >
           Dashboard
         </button>
         <button 
           onClick={() => onViewChange('tickets')}
-          className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button tickets-button'
+          className='nav-button'
         >
           Tickets
         </button>
         <button 
           onClick={() => onViewChange('to-dos')}
-          className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button to-dos-button'
+          className='nav-button'
         >
           To-Do's
         </button>
         <button 
           onClick={() => onViewChange('staff-directory')}
-          className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button staff-directory-button'
+          className='nav-button'
         >
           Staff Directory
         </button>
         <button 
-        onClick={() => onViewChange('it-request')}
-        className='bg-blue-500 text-white p-2 rounded-md w-[100%] hover:cursor-pointer header-button it-request-button'>IT Request</button>
+          onClick={() => onViewChange('it-request')}
+          className='nav-button'
+        >
+          IT Request
+        </button>
       </div>
     </div>
   )

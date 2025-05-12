@@ -1,4 +1,5 @@
 import './styles/App.css'
+import './styles/typography.css'
 import Header from './components/Header'
 import DashboardPage from './pages/HomeDashboard/DashboardPage'
 import StaffDirectory from './pages/StaffDirectory'
@@ -29,7 +30,7 @@ function App() {
         <div className='w-[80%] ml-[20%]'>
           <ToDos onViewChange={handleViewChange} />
         </div>       
-        ) : activeView === 'staff-directory' ? (
+      ) : activeView === 'staff-directory' ? (
         <div className='w-[80%] ml-[20%]'>
           <StaffDirectory onViewChange={handleViewChange} />
         </div>   
@@ -37,7 +38,6 @@ function App() {
         <div className='w-[80%] ml-[20%]'>
           <ITRequest onViewChange={handleViewChange} />
         </div>
-
       ) : null}
     </div>
   )

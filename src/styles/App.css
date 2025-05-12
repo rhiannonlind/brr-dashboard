@@ -1,0 +1,27 @@
+/* Color Application Guide
+ * For Dashboard Elements
+ *
+ * Background: #FAFAFA (Clean white)
+ * Text: #2D3142 (Deep slate blue-gray)
+ * Primary buttons/CTAs: #E8846B (Burnt peach)
+ * Secondary buttons: #6D98BA (Muted blue)
+ * Dividers/Borders: #F0F2F5 (Light gray-blue)
+ * Icons/Secondary elements: #767B91 (Medium slate gray)
+ * Success states: #7AA89F (Muted sage green)
+ * Error states: #D45D63 (Subdued red)
+
+ Typography
+Primary Font: SF Pro Display
+
+Clean, modern sans-serif that works excellently for digital interfaces
+Alternative free options: Inter or Poppins (widely available on Google Fonts)
+
+Text Sizing System
+
+Heading 1: 32px / 2rem (Dashboard title, major sections)
+Heading 2: 24px / 1.5rem (Section headers)
+Heading 3: 20px / 1.25rem (Card titles, feature headers)
+Body: 16px / 1rem (Standard text)
+Small: 14px / 0.875rem (Secondary information, captions)
+Micro: 12px / 0.75rem (Legal text, footnotes)
+ */
