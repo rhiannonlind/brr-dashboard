@@ -2,11 +2,12 @@ import React from 'react'
 import ticketsData from '../../data/tickets.json'
 import Card from '../../components/Card'
 import Carousel from '../../components/Carousel'
+import '../../styles/HomeDashboard.css'
 
 export default function OpenTickets() {
   return (
-    <div className="w-full">
-      <h2 className="text-2xl font-bold mb-4">Open Tickets</h2>
+    <div className="w-full p-5">
+      <h2 className="text-2xl font-bold mb-4 text-brand">Open Tickets</h2>
       <Carousel
         items={ticketsData.rows}
         cardsPerView={4}

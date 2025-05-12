@@ -1,0 +1,153 @@
+.it-request-container {
+  background-color: #F0F2FA;
+  width: 60%;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-brand-secondary {
+    color: #4A4E69;
+  }
+
+.it-request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 90%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  color: #4A4E69;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 0.5rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.375rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4CC9F0;
+  box-shadow: 0 0 0 2px rgba(76, 201, 240, 0.2);
+}
+
+.form-select {
+  padding: 0.5rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.375rem;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #4CC9F0;
+  box-shadow: 0 0 0 2px rgba(76, 201, 240, 0.2);
+}
+
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.375rem;
+  min-height: 150px;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #4CC9F0;
+  box-shadow: 0 0 0 2px rgba(76, 201, 240, 0.2);
+}
+
+.submit-button {
+  background-color: #FF6B6B;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #FF5252;
+  cursor: pointer;
+}
+
+.success-message {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.success-text {
+  color: #4CC9F0;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .it-request-container {
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+
+  .it-request-form {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-group {
+    gap: 0.25rem;
+  }
+
+  .form-label {
+    font-size: 0.875rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+
+  .form-textarea {
+    min-height: 120px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+
+  .success-message {
+    margin: 2rem 1rem;
+  }
+
+  .success-text {
+    font-size: 0.875rem;
+    padding: 0 1rem;
+  }
+} 

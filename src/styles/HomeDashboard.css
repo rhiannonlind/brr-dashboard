@@ -1,0 +1,252 @@
+.dashboard-container {
+  padding: 2rem;
+  margin-left: 20%; 
+}
+
+.dashboard-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #2D3142;
+  margin-bottom: 1.5rem;
+  padding: 2rem 0 0 2rem;
+}
+
+.dashboard-subtitle {
+  padding-left: 2rem;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Brand Colors */
+.bg-brand {
+  background-color: #FFFFFF;
+}
+
+.bg-brand-secondary {
+  background-color: #F0F2FA;
+}
+
+.text-brand {
+  color: #1A1E3C;
+}
+
+.text-brand-secondary {
+  color: #4A4E69;
+}
+
+.border-brand {
+  border-color: #F0F2FA;
+}
+
+/* Card Styles */
+.card-shadow {
+  box-shadow: 0 2px 4px rgba(26, 30, 60, 0.05);
+}
+
+.card-rounded {
+  border-radius: 0.5rem;
+}
+
+/* Ticket and Task Styles */
+.ticket-item, .task-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #F0F2F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-item:last-child, .task-item:last-child {
+  border-bottom: none;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Status Colors */
+.status-open {
+  background-color: #06D6A0;
+  color: #FFFFFF;
+}
+
+.status-pending {
+  background-color: #FF6B6B;
+  color: #FFFFFF;
+}
+
+/* Update Item Styles */
+.update-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #F0F2F5;
+}
+
+.update-item:last-child {
+  border-bottom: none;
+}
+
+.update-timestamp {
+  color: #767B91;
+  font-size: 0.875rem;
+}
+
+.update-content {
+  color: #2D3142;
+  margin-top: 0.25rem;
+}
+
+/* Text Colors */
+.text-muted {
+  color: #4A4E69;
+}
+
+.text-completed {
+  color: #4A4E69;
+  text-decoration: line-through;
+}
+
+/* Dashboard Specific */
+.dashboard-header {
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+  background-color: #F0F2FA;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.dashboard-title {
+  color: #1A1E3C;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dashboard-subtitle {
+  color: #4A4E69;
+  font-size: 1.125rem;
+}
+
+/* Accent Elements */
+.accent-purple {
+  color: #7209B7;
+}
+
+.accent-coral {
+  color: #FF6B6B;
+}
+
+.accent-azure {
+  color: #4CC9F0;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4A4E69 #F0F2FA;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F0F2FA;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4A4E69;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #3A3E59;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+    margin-left: 0;
+    margin-top: 60px; /* Add margin for fixed header */
+  }
+
+  .dashboard-title {
+    font-size: 1.75rem;
+    padding: 1rem 0 0 1rem;
+  }
+
+  .dashboard-subtitle {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Carousel adjustments for mobile */
+  .carousel-container {
+    padding: 0 1rem;
+  }
+
+  .carousel-item {
+    width: 100% !important;
+    padding: 0.5rem;
+  }
+
+  /* Card adjustments for mobile */
+  .card {
+    margin: 0.5rem 0;
+  }
+
+  /* Text size adjustments */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  /* Banner text adjustments */
+  .banner-content {
+    padding: 1rem;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-text {
+    font-size: 0.875rem;
+  }
+
+  /* Container height adjustments */
+  .h-\[400px\] {
+    height: 300px !important;
+    min-height: 300px;
+  }
+} 

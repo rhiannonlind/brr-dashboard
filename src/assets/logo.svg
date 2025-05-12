@@ -1,18 +1,18 @@
-<svg viewBox="0 0 289 192" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="20 20 249 152" xmlns="http://www.w3.org/2000/svg">
   <!-- Background shape -->
-  <rect x="20" y="20" width="249" height="152" rx="12" fill="#2D3142" />
+  <rect x="20" y="20" width="249" height="152" rx="12" fill="#1A1E3C" />
   
   <!-- Decorative element -->
-  <rect x="20" y="20" width="18" height="152" fill="#E8846B" />
+  <rect x="20" y="20" width="18" height="152" fill="#FF6B6B" />
   
   <!-- R Letter - More stylized -->
-  <path d="M90 142V50h42c16 0 28 12 28 26c0 12-8 22-20 25l25 41h-30l-20-38h-2v38H90z" fill="#FAFAFA" />
+  <path d="M90 142V50h42c16 0 28 12 28 26c0 12-8 22-20 25l25 41h-30l-20-38h-2v38H90z" fill="#FFFFFF" />
   
   <!-- Distinctive leg on the R -->
-  <path d="M113 104l18 38h15l-22-38h-11z" fill="#6D98BA" />
+  <path d="M113 104l18 38h15l-22-38h-11z" fill="#4CC9F0" />
   
   <!-- Decorative dots -->
-  <circle cx="245" cy="50" r="8" fill="#E8846B" />
-  <circle cx="245" cy="80" r="8" fill="#6D98BA" />
-  <circle cx="245" cy="110" r="8" fill="#E8846B" />
+  <circle cx="245" cy="50" r="8" fill="#FF6B6B" />
+  <circle cx="245" cy="80" r="8" fill="#7209B7" />
+  <circle cx="245" cy="110" r="8" fill="#4CC9F0" />
 </svg>

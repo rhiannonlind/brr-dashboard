@@ -51,18 +51,18 @@ export default function Checklist({ tasks, setTasks }) {
             placeholder="Add a task" 
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
-            className='p-2 border border-gray-300 rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-blue-500'
+            className='p-2 border border-[#F0F2FA] rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-[#4CC9F0] text-[#1A1E3C]'
           />
           <button 
             type="submit"
-            className='bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 hover:cursor-pointer transition-colors duration-200'
+            className='bg-[#FF6B6B] text-white py-2 px-4 rounded-md hover:bg-[#FF5252] hover:cursor-pointer transition-colors duration-200'
           >
             Add
           </button>
         </form>
         <button 
           onClick={handleDeleteAll}
-          className='ml-4 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 hover:cursor-pointer transition-colors duration-200'
+          className='ml-4 bg-[#4A4E69] text-white py-2 px-4 rounded-md hover:bg-[#3A3E59] hover:cursor-pointer transition-colors duration-200'
         >
           Delete All
         </button>
@@ -72,7 +72,7 @@ export default function Checklist({ tasks, setTasks }) {
           {tasks.map((task, index) => (
             <li 
               key={index}
-              className='p-2 bg-gray-100 rounded-md flex items-center justify-between'
+              className='p-2 bg-[#F0F2FA] rounded-md flex items-center justify-between'
             >
               {editingTask === index ? (
                 <form onSubmit={(e) => handleEditSubmit(e, index)} className='flex-grow flex gap-2'>
@@ -80,43 +80,43 @@ export default function Checklist({ tasks, setTasks }) {
                     type="text"
                     value={editText}
                     onChange={(e) => setEditText(e.target.value)}
-                    className='p-1 border border-gray-300 rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-blue-500'
+                    className='p-1 border border-[#F0F2FA] rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-[#4CC9F0] text-[#1A1E3C]'
                   />
                   <button 
                     type="submit"
-                    className='bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600 hover:cursor-pointer transition-colors duration-200'
+                    className='bg-[#06D6A0] text-white py-1 px-3 rounded-md hover:bg-[#05C090] hover:cursor-pointer transition-colors duration-200'
                   >
                     Save
                   </button>
                   <button 
                     type="button"
                     onClick={() => setEditingTask(null)}
-                    className='bg-gray-500 text-white py-1 px-3 rounded-md hover:bg-gray-600 hover:cursor-pointer transition-colors duration-200'
+                    className='bg-[#4A4E69] text-white py-1 px-3 rounded-md hover:bg-[#3A3E59] hover:cursor-pointer transition-colors duration-200'
                   >
                     Cancel
                   </button>
                 </form>
               ) : (
                 <>
-                  <span className={`flex-grow break-words max-w-[calc(100%-120px)] ${task.completed ? 'line-through text-gray-500' : ''}`}>
+                  <span className={`flex-grow break-words max-w-[calc(100%-120px)] ${task.completed ? 'line-through text-[#4A4E69]' : 'text-[#1A1E3C]'}`}>
                     {task.text}
                   </span>
                   <div className='flex gap-2 shrink-0'>
                     <button
                       onClick={() => handleComplete(index)}
-                      className='w-6 h-6 border border-gray-400 rounded flex items-center justify-center hover:bg-gray-200'
+                      className='w-6 h-6 border border-[#4A4E69] rounded flex items-center justify-center hover:bg-[#F0F2FA] text-[#06D6A0]'
                     >
                       {task.completed && '✓'}
                     </button>
                     <button
                       onClick={() => handleEdit(index)}
-                      className='text-blue-500 hover:text-blue-700'
+                      className='text-[#4CC9F0] hover:text-[#3AB9E0]'
                     >
                       ✎
                     </button>
                     <button
                       onClick={() => handleDelete(index)}
-                      className='text-red-500 hover:text-red-700'
+                      className='text-[#FF6B6B] hover:text-[#FF5252]'
                     >
                       ×
                     </button>

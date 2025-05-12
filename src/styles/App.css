@@ -1,16 +1,34 @@
+/* Brand Color Palette
+ * Main Colors
+ *
+ * Primary: #1A1E3C (Deep indigo)
+ * Secondary: #FFFFFF (Pure white)
+ * Accent 1: #FF6B6B (Vibrant coral)
+ * Accent 2: #4CC9F0 (Bright azure)
+ * Accent 3: #7209B7 (Vivid purple)
+ * Neutral 1: #4A4E69 (Slate purple)
+ * Neutral 2: #F0F2FA (Light lavender-white)
+ *
+ * This palette introduces more vibrant energy with the coral, azure, and purple accents
+ * while maintaining the deep indigo as a grounding element that keeps it professional.
+ * The high contrast ensures accessibility while the vibrancy brings modern appeal.
+ */
+
 /* Color Application Guide
  * For Dashboard Elements
  *
- * Background: #FAFAFA (Clean white)
- * Text: #2D3142 (Deep slate blue-gray)
- * Primary buttons/CTAs: #E8846B (Burnt peach)
- * Secondary buttons: #6D98BA (Muted blue)
- * Dividers/Borders: #F0F2F5 (Light gray-blue)
- * Icons/Secondary elements: #767B91 (Medium slate gray)
- * Success states: #7AA89F (Muted sage green)
- * Error states: #D45D63 (Subdued red)
+ * Background: #FFFFFF (Pure white)
+ * Text: #1A1E3C (Deep indigo)
+ * Primary buttons/CTAs: #FF6B6B (Vibrant coral)
+ * Secondary buttons/Links: #4CC9F0 (Bright azure)
+ * Highlights/Special elements: #7209B7 (Vivid purple)
+ * Dividers/Borders: #F0F2FA (Light lavender-white)
+ * Icons/Secondary elements: #4A4E69 (Slate purple)
+ * Success states: #06D6A0 (Mint green)
+ * Error states: #FF6B6B (Vibrant coral - same as Accent 1)
+ */
 
- Typography
+/* Typography
 Primary Font: SF Pro Display
 
 Clean, modern sans-serif that works excellently for digital interfaces

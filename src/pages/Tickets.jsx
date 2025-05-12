@@ -2,14 +2,15 @@ import React from 'react'
 import Database from '../components/Database'
 import Banner from '../components/Banner'
 import ticketsData from '../data/tickets.json'
-
+import ticketsBannerImage from '../assets/Tickets-Banner.svg'
 export default function Tickets({ onViewChange }) {
   return (
     <div>
-      <Banner />
-      <div className='w-[80%] my-[4rem] mx-auto'>
-        <h1 className='w-[90%]'>Tickets</h1>
-      </div>
+      <Banner 
+        title="Active Tickets"
+        image={ticketsBannerImage}
+        imageAlt="Tickets banner"
+      />
       <Database data={ticketsData} />
     </div>
   )

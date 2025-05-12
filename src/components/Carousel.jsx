@@ -1,20 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Carousel({ items, cardsPerView = 4, renderItem }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentCardsPerView, setCurrentCardsPerView] = useState(cardsPerView);
   const totalCards = items.length;
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setCurrentCardsPerView(1);
+      } else {
+        setCurrentCardsPerView(cardsPerView);
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [cardsPerView]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + cardsPerView >= totalCards ? 0 : prevIndex + cardsPerView
+      prevIndex + currentCardsPerView >= totalCards ? 0 : prevIndex + currentCardsPerView
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - cardsPerView < 0
-        ? Math.floor((totalCards - 1) / cardsPerView) * cardsPerView
-        : prevIndex - cardsPerView
+      prevIndex - currentCardsPerView < 0
+        ? Math.floor((totalCards - 1) / currentCardsPerView) * currentCardsPerView
+        : prevIndex - currentCardsPerView
     );
   };
 
@@ -24,11 +39,14 @@ export default function Carousel({ items, cardsPerView = 4, renderItem }) {
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)`,
+            transform: `translateX(-${currentIndex * (100 / currentCardsPerView)}%)`,
           }}
         >
           {items.map((item, index) => (
-            <div key={index} className="flex-none w-1/4 p-4">
+            <div 
+              key={index} 
+              className={`flex-none p-4 ${window.innerWidth <= 768 ? 'w-full' : 'w-1/4'}`}
+            >
               {renderItem(item, index)}
             </div>
           ))}
@@ -36,13 +54,13 @@ export default function Carousel({ items, cardsPerView = 4, renderItem }) {
       </div>
       <button
         onClick={prevSlide}
-        className="absolute -left-6 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg z-10"
+        className="absolute -left-6 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg z-10 hover:cursor-pointer"
       >
         ←
       </button>
       <button
         onClick={nextSlide}
-        className="absolute -right-6 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg z-10"
+        className="absolute -right-6 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg z-10 hover:cursor-pointer"
       >
         →
       </button>

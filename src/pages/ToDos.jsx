@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Checklist from '../components/Checklist';
 import Banner from '../components/Banner';
+import toDoBannerImage from '../assets/ToDo-Banner.svg';
+import '../styles/ToDos.css';
 
 const ToDos = () => {
   const [tasks, setTasks] = useState(() => {
@@ -16,11 +18,15 @@ const ToDos = () => {
 
   return (
     <>
-      <Banner />
-      <div className='w-[80%] m-auto justify-center text-center mt-4'>
-        <h1 className='text-2xl font-bold mb-4'>To-Do Tasklist</h1>
+      <Banner 
+        title="To-Do Tasklist"
+        image={toDoBannerImage}
+        imageAlt="To-Do Tasklist banner"
+      />
+      <div className='todos-container'>
+        <h1 className='todos-title'>Tasklist</h1>
+        <Checklist tasks={tasks} setTasks={setTasks} />
       </div>
-      <Checklist tasks={tasks} setTasks={setTasks} />
     </>
   );
 };
