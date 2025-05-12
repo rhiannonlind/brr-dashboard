@@ -104,19 +104,19 @@ export default function Checklist({ tasks, setTasks }) {
                   <div className='flex gap-2 shrink-0'>
                     <button
                       onClick={() => handleComplete(index)}
-                      className='w-6 h-6 border border-[#4A4E69] rounded flex items-center justify-center hover:bg-[#F0F2FA] text-[#06D6A0]'
+                      className='w-6 h-6 border border-[#4A4E69] rounded flex items-center justify-center hover:bg-[#F0F2FA] text-[#06D6A0] hover:cursor-pointer'
                     >
                       {task.completed && '✓'}
                     </button>
                     <button
                       onClick={() => handleEdit(index)}
-                      className='text-[#4CC9F0] hover:text-[#3AB9E0]'
+                      className='text-[#4CC9F0] hover:text-[#3AB9E0] hover:cursor-pointer'
                     >
                       ✎
                     </button>
                     <button
                       onClick={() => handleDelete(index)}
-                      className='text-[#FF6B6B] hover:text-[#FF5252]'
+                      className='text-[#FF6B6B] hover:text-[#FF5252] hover:cursor-pointer'
                     >
                       ×
                     </button>
