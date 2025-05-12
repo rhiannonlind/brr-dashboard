@@ -6,43 +6,34 @@ import StaffDirectory from './pages/StaffDirectory'
 import Tickets from './pages/Tickets'
 import ITRequest from './pages/ITRequest'
 import ToDos from './pages/ToDos'
-import { useState } from 'react'
 import { ITRequestsProvider } from './context/ITRequestsContext'
+import { ToastProvider } from './context/ToastContext'
+import ErrorBoundary from './components/ErrorBoundary'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 
 function App() {
-  const [activeView, setActiveView] = useState('main')
-
-  const handleViewChange = (view) => {
-    setActiveView(view)
-  }
-
   return (
-    <ITRequestsProvider>
-      <div className='flex'>
-        <Header onViewChange={handleViewChange} />
-        {activeView === 'main' ? (
-          <div className='w-[80%] ml-[20%] page-container'>
-            <DashboardPage onViewChange={handleViewChange} />
-          </div>
-        ) : activeView === 'tickets' ? (
-          <div className='w-[80%] ml-[20%] page-container'>
-            <Tickets onViewChange={handleViewChange} />
-          </div>
-        ) : activeView === 'to-dos' ? (
-          <div className='w-[80%] ml-[20%] page-container'>
-            <ToDos onViewChange={handleViewChange} />
-          </div>       
-        ) : activeView === 'staff-directory' ? (
-          <div className='w-[80%] ml-[20%] page-container'>
-            <StaffDirectory onViewChange={handleViewChange} />
-          </div>   
-        )  : activeView === 'it-request' ? (
-          <div className='w-[80%] ml-[20%] page-container '>
-            <ITRequest onViewChange={handleViewChange} />
-          </div>
-        ) : null}
-      </div>
-    </ITRequestsProvider>
+    <ErrorBoundary>
+      <Router>
+        <ToastProvider>
+          <ITRequestsProvider>
+            <div className='flex'>
+              <Header />
+              <div className='w-[80%] ml-[20%] page-container'>
+                <Routes>
+                  <Route path="/" element={<DashboardPage />} />
+                  <Route path="/tickets" element={<Tickets />} />
+                  <Route path="/to-dos" element={<ToDos />} />
+                  <Route path="/staff-directory" element={<StaffDirectory />} />
+                  <Route path="/it-request" element={<ITRequest />} />
+                  <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
+              </div>
+            </div>
+          </ITRequestsProvider>
+        </ToastProvider>
+      </Router>
+    </ErrorBoundary>
   )
 }
 
