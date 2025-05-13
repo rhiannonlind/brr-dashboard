@@ -9,6 +9,8 @@ The BRR Dashboard is a centralized platform designed to streamline internal oper
 ## My approach
 My approach to this task was to break down what the ideal user journey was and determine the heirachy of information. Then it became a matter of determining the most user friendly way of displaying the information and creating the wireframes so I could better understand how I could stack components effectively. Finally, after creating a cohesive brand identity I could begin by building out all the pages except the homepage so I could ensure the information that needed to be sent up to the home page was clearly structured and organised.
 
+I used context-based state management to share data between components - this made it way easier to handle things like user info and ticket status without having to pass props through every component. I also added some helpful features like an Error Boundary to catch any runtime errors and toast notifications to give users feedback when they submit a ticket or if something goes wrong. I created some utility functions for common tasks like date formatting and data validation, and made custom hooks for logic I needed to reuse across different components.
+
 ## Features
 
 ### Home Dashboard
@@ -55,10 +57,16 @@ My approach to this task was to break down what the ideal user journey was and d
 - Built with React.js
 - Modern, responsive design using Tailwind CSS
 - Component-based architecture
-- Context-based state management
+- Context-based state management for sharing data between components (like user info and ticket status)
 - Utility-first CSS framework for rapid UI development
 - Custom Tailwind configuration for BRR Media's design system
 - Responsive breakpoints and mobile-first approach
+
+### Additional Features
+- Error Boundary component to catch and handle any runtime errors
+- Toast notifications for user feedback (like when a ticket is submitted or an error occurs)
+- Utility functions for common tasks (date formatting, data validation, etc.)
+- Custom hooks for reusable logic across components
 
 ## Responsive Design Implementation
 
