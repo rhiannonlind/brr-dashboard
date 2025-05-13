@@ -8,3 +8,14 @@
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .todos-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Adjust button text size for mobile */
+  button {
+    font-size: 0.875rem !important;
+  }
+}
+

@@ -96,31 +96,35 @@ export default function Checklist({ tasks, setTasks }) {
 
   return (
     <div className='p-4 max-w-2xl mx-auto'>
-      <div className='flex justify-between items-center mb-4'>
-        <form onSubmit={handleSubmit} className='flex gap-2 flex-grow'>
+      <div className='flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center sm:gap-2 mb-4'>
+        <div className='w-full sm:flex-grow'>
           <input 
             type="text" 
             placeholder="Add a task" 
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
-            className='p-2 border border-[#F0F2FA] rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-[#4CC9F0] text-[#1A1E3C]'
+            className='w-full p-2 border border-[#F0F2FA] rounded-md focus:outline-none focus:ring-2 focus:ring-[#4CC9F0] text-[#1A1E3C]'
             disabled={isLoading}
           />
+        </div>
+        <div className='flex flex-row gap-2 w-full sm:w-auto'>
+          <form onSubmit={handleSubmit} className='flex-1 sm:flex-none'>
+            <button 
+              type="submit"
+              className='w-full sm:w-auto bg-[#FF6B6B] text-white py-2 px-3 sm:px-4 rounded-md hover:bg-[#FF5252] hover:cursor-pointer transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base'
+              disabled={isLoading}
+            >
+              {isLoading ? 'Adding...' : 'Add'}
+            </button>
+          </form>
           <button 
-            type="submit"
-            className='bg-[#FF6B6B] text-white py-2 px-4 rounded-md hover:bg-[#FF5252] hover:cursor-pointer transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed'
-            disabled={isLoading}
+            onClick={handleDeleteAll}
+            className='flex-1 sm:flex-none bg-[#4A4E69] text-white py-2 px-3 sm:px-4 rounded-md hover:bg-[#3A3E59] hover:cursor-pointer transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base'
+            disabled={isLoading || tasks.length === 0}
           >
-            {isLoading ? 'Adding...' : 'Add'}
+            Delete All
           </button>
-        </form>
-        <button 
-          onClick={handleDeleteAll}
-          className='ml-4 bg-[#4A4E69] text-white py-2 px-4 rounded-md hover:bg-[#3A3E59] hover:cursor-pointer transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed'
-          disabled={isLoading || tasks.length === 0}
-        >
-          Delete All
-        </button>
+        </div>
       </div>
       <div>
         {tasks.length === 0 ? (
