@@ -94,7 +94,13 @@ export default function ITRequest() {
               />
             </div>
             <div className='form-group'>
-              <label className='form-label'>Email</label>
+              <label className='form-label'>
+                Email
+                <span className="tooltip-container">
+                  <button type="button" className="tooltip-button">?</button>
+                  <span className="tooltip-text">To see ticket requests in dashboard, enter "rhiannon.lind@gmail.com"</span>
+                </span>
+              </label>
               <input 
                 type="email" 
                 name="email"
