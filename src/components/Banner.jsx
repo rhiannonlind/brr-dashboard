@@ -1,5 +1,5 @@
 import React from 'react'
-import defaultBannerImage from '../assets/Dashboard-banner-image.svg'
+import defaultBannerImage from '../assets/Dashboard-Banner-Image.svg'
 
 export default function Banner({ 
   title = "Welcome to your Dashboard",
